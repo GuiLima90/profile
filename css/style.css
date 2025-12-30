@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  background-color: #f7f8fb;
+  line-height: 1.7;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HEADER */
+.header {
+  padding: 32px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FOTO */
+.profile-photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* INTRO */
+.intro {
+  padding: 0px 0;
+   max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.intro a {
+   color: #1f3a5f;
+  text-decoration: none;
+  border-bottom: 1px solid #1f3a5f;
+  padding-bottom: 2px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #1f2a37; /* azul escuro acinzentado */
+  color: #d1d5db;
+  padding: 80px 0 40px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+
+.footer h4 {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.social-links a {
+  font-size: 1.6rem;
+  color: #d1d5db; /* azul escuro acinzentado */
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #f63b3b; /* azul mais vivo no hover */
+  transform: translateY(-3px);
+}
+/* WRAPPER DO EMAIL */
+.social-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* TOOLTIP DO EMAIL */
+#email-tooltip {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #ffffff;
+  color: #111827;
+
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  display: none;          /* 🔴 ISSO ESCONDE */
+  white-space: nowrap;
+  z-index: 10;
+}
+
+#email-tooltip {
+  top: calc(100% + 12px);  /* aparece ABAIXO dos ícones */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#email-tooltip a:hover {
+  text-decoration: underline;
+}

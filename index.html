@@ -1,55 +1,98 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Guilherme Profile</title>
-    <meta name="description" content="Guilherme profile page">
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Guilherme Starnino | Developer</title>
+  <meta name="description" content="Portfólio de Guilherme Starnino, Desenvolvedor Full-Stack Júnior">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <main>
+<body>
 
-      <div class="bloco" id="bloco-apresentacao">
-      <h1>Hello, I’m Guilherme Starnino</h1>
-      <h2> Future Programmer!</h2>
-        <img src="images/Gui foto.png.jpeg" alt="Foto de Guilherme sorrindo" id="avatar">
-        <p>
-          Passionate about programming, design, and creativity 💡.
-        </p>
-        <p>When I’m not in front of the computer, I’m probably playing football⚽.</p>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="profile-photo">
+        <img src="images/Gui foto.png.jpeg" alt="Foto de Guilherme Starnino">
+      </div>
+    </div>
+  </header>
 
-        <button>
-          <a href="https://www.lewagon.com/pt-BR" target="_blank">
-         Visit the Le Wagon website!
+  <!-- MAIN -->
+  <main class="container">
+
+    <section class="intro">
+      <h1>Olá, eu sou Guilherme.</h1>
+
+      <p>
+        Sou Desenvolvedor Full-Stack Júnior, focado em construir aplicações web
+        claras, bem estruturadas e orientadas a problemas reais.
+      </p>
+
+      <p>
+        Venho de uma sólida experiência profissional fora da área de tecnologia,
+        o que me trouxe uma forte mentalidade de responsabilidade, organização
+        e aprendizado contínuo.
+      </p>
+
+      <p>
+        Se quiser conversar, trocar ideias ou conhecer meu trabalho,
+        fique à vontade para entrar em contato comigo.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contato">
+    <div class="container footer-content">
+
+      <!-- SOCIAL ICONS + EMAIL TOOLTIP -->
+      <div class="social-wrapper">
+        <div class="social-links">
+          <a href="#" id="email-btn" aria-label="Mostrar email">
+            <i class="fa-regular fa-envelope"></i>
           </a>
-        </button>
+
+          <a href="https://github.com/GuiLima90" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.instagram.com/guilimastar/" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+
+        <div id="email-tooltip">
+          <a href="mailto:starninoguilherm@gmail.com">
+            starninoguilherm@gmail.com
+          </a>
+        </div>
       </div>
 
-
-      <div class="bloco" id="bloco-redes">
-        <ul id="social-links">
-          <li>
-            <a href="https://github.com/GuiLima90" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/guilherme-starnino" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/guilimastar/" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
+      <!-- LINKS -->
+      <div class="footer-column">
+        <h4>Meu trabalho</h4>
+        <p>Projetos</p>
+        <p>GitHub</p>
+        <p>Currículo</p>
       </div>
-    </main>
-  </body>
+
+    </div>
+
+    <div class="footer-bottom container">
+      © Guilherme Starnino 2025
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
 </html>
