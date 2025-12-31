@@ -187,5 +187,24 @@ body {
 }
 
 .project-links a:hover {
-  border-bottom: 1px solid #2563eb;
+  border-bottom: 1px solid #ffffff;
+}
+
+
+.footer-links {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
 }
