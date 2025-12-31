@@ -147,3 +147,45 @@ body {
 #email-tooltip a:hover {
   text-decoration: underline;
 }
+
+.project {
+  max-width: 720px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.project h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.project p {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.project-tech {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.project-tech li {
+  display: inline-block;
+  margin: 6px 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+}
+
+.project-links a:hover {
+  border-bottom: 1px solid #2563eb;
+}
