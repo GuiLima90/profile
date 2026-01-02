@@ -243,3 +243,15 @@ body {
 #bg-canvas {
   pointer-events: none;
 }
+.icon-btn {
+  background: none;
+  border: none;
+  color: #d1d5db;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.icon-btn:hover {
+  color: #60a5fa;
+}
