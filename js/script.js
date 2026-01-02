@@ -51,7 +51,7 @@ if (canvas) {
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = "rgba(100, 116, 139, 0.35)";
+      ctx.fillStyle = "rgba(1, 1, 1, 0.35)";
       ctx.fill();
     });
 

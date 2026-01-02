@@ -229,16 +229,7 @@ body {
   z-index: -1;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(6px);
-  border-radius: 16px;
-  padding: 40px 48px;
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-}
+
 
 #bg-canvas {
   pointer-events: none;
@@ -254,4 +245,19 @@ body {
 
 .icon-btn:hover {
   color: #60a5fa;
+}
+.home-link {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+
+  font-size: 0.9rem;
+  color: #6b7280;
+  text-decoration: none;
+
+  z-index: 10;
+}
+
+.home-link:hover {
+  color: #2563eb;
 }
