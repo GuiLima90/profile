@@ -134,34 +134,21 @@ body {
 
 /* TOOLTIP DO EMAIL */
 #email-tooltip {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  background-color: #ffffff;
-  color: #111827;
-
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-size: 0.85rem;
-
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-
-  display: none;          /* 🔴 ISSO ESCONDE */
-  white-space: nowrap;
-  z-index: 10;
+  display: none;
+  margin-top: 8px;
+  text-align: center;
 }
 
-#email-tooltip {
-  top: calc(100% + 12px);  /* aparece ABAIXO dos ícones */
-  left: 50%;
-  transform: translateX(-50%);
+#email-tooltip a {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  text-decoration: none;
 }
 
 #email-tooltip a:hover {
   text-decoration: underline;
 }
+
 
 .project {
   max-width: 720px;
@@ -251,4 +238,8 @@ body {
   margin: 0 auto;
   text-align: center;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+#bg-canvas {
+  pointer-events: none;
 }

@@ -1,12 +1,15 @@
+// ===== EMAIL TOGGLE =====
 const emailBtn = document.getElementById("email-btn");
 const emailTooltip = document.getElementById("email-tooltip");
 
-emailBtn.addEventListener("click", (event) => {
-  event.preventDefault();
+if (emailBtn && emailTooltip) {
+  emailBtn.addEventListener("click", (e) => {
+    e.preventDefault();
 
-  emailTooltip.style.display =
-    emailTooltip.style.display === "block" ? "none" : "block";
-});
+    const isVisible = emailTooltip.style.display === "block";
+    emailTooltip.style.display = isVisible ? "none" : "block";
+  });
+}
 
 // ===== BACKGROUND ANIMATION =====
 
