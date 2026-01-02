@@ -8,7 +8,32 @@ body {
   color: #1a1a1a;
   background-color: #f7f8fb;
   line-height: 1.7;
+   background: linear-gradient(
+    120deg,
+    #f7f8fb,
+    #e9eef5,
+    #f7f8fb
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 18s ease infinite;
+
 }
+@media (max-width: 768px) {
+  body {
+    animation: none;
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 
 /* CONTAINER PADRÃO */
 .container {
