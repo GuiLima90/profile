@@ -221,3 +221,9 @@ body {
 .back-home:hover {
   color: #2563eb;
 }
+
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
