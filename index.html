@@ -1,98 +1,103 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Guilherme Starnino | Developer</title>
   <meta name="description" content="Portfólio de Guilherme Starnino, Desenvolvedor Full-Stack Júnior">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="../css/components/card.css">
+
 
 </head>
 
 <body>
-  <canvas id="bg-canvas"></canvas>
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-content">
-      <div class="profile-photo">
-        <img src="images/Gui foto.png.jpeg" alt="Foto de Guilherme Starnino">
-      </div>
-    </div>
+  <!-- NAVBAR -->
+  <header class="topbar">
+    <button class="topbar__btn" id="menuBtn" aria-label="Menu">
+      ☰
+    </button>
   </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <nav class="drawer" id="drawer">
+    <a href="about/">Über mich</a>
+    <a href="projects/">Projekte</a>
+    <a href="assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank">
+      Lebenslauf
+    </a>
+  </nav>
+
+  <!-- Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
 
   <!-- MAIN -->
   <main class="container">
+    <section class="card intro-card">
+      <div class="intro-text">
+        <h1>Hallo, ich bin Guilherme.</h1>
 
-    <section class="card">
-      <h1>Hallo, ich bin Guilherme.</h1>
+        <p>
+          Ich bin Junior Full-Stack Developer und fokussiere mich auf die Entwicklung
+          klarer, gut strukturierter Webanwendungen, die reale Probleme lösen.
+        </p>
 
-      <p>
-        Ich bin Junior Full-Stack Developer und fokussiere mich auf die Entwicklung
-        klarer, gut strukturierter Webanwendungen, die reale Probleme lösen.
+        <p>
+          Ich bringe umfangreiche Berufserfahrung außerhalb der IT-Branche mit,
+          wodurch ich eine ausgeprägte Verantwortungsbereitschaft,
+          Organisationsfähigkeit und eine starke Lernmotivation entwickelt habe.
+        </p>
 
-      </p>
+        <p>
+          Wenn Sie Interesse an einem Austausch haben oder mehr über meine Arbeit
+          erfahren möchten, freue ich mich über eine Kontaktaufnahme.
+        </p>
+      </div>
 
-      <p>
-         Ich bringe umfangreiche Berufserfahrung außerhalb der IT-Branche mit,
-            wodurch ich eine ausgeprägte Verantwortungsbereitschaft, Organisationsfähigkeit
-            und eine starke Lernmotivation entwickelt habe.
-      </p>
-
-      <p>
-          Wenn Sie Interesse an einem Austausch haben, Ideen teilen möchten
-          oder mehr über meine Arbeit erfahren wollen,
-          freue ich mich über eine Kontaktaufnahme.
-      </p>
+      <div class="intro-photo">
+        <img src="images/Gui foto.png.jpeg" alt="Foto de Guilherme Starnino">
+      </div>
     </section>
-
   </main>
 
-  <!-- FOOTER -->
+    <!-- FOOTER -->
   <footer class="footer">
-  <div class="footer-row">
-
     <div class="footer-social">
-
       <button id="email-btn" aria-label="Mostrar email" class="icon-btn">
         <i class="fa-regular fa-envelope"></i>
-       </button>
+      </button>
 
       <a href="https://github.com/GuiLima90" target="_blank" aria-label="GitHub">
         <i class="fa-brands fa-github"></i>
       </a>
+
       <a href="https://www.linkedin.com/in/guilherme-starnino" target="_blank" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin"></i>
       </a>
     </div>
 
-     <div id="email-tooltip">
-       <a href="mailto:starninoguilherm@gmail.com">
-         starninoguilherm@gmail.com
-       </a>
-     </div>
-
-    <div class="footer-links">
-      <a href="about/">Über mich</a>
-      <a href="projects/">Projekte</a>
-      <a href="assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank">Lebenslauf</a>
+    <div id="email-tooltip">
+      <a href="mailto:starninoguilherm@gmail.com">
+        starninoguilherm@gmail.com
+      </a>
     </div>
 
-  </div>
+    <div class="footer-bottom">
+      © Guilherme Starnino 2025
+    </div>
+  </footer>
 
-  <div class="footer-bottom">
-    © Guilherme Starnino 2025
-  </div>
-</footer>
-
+  <!-- Scripts -->
   <script src="js/script.js"></script>
-
 </body>
 </html>

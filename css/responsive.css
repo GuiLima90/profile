@@ -1,0 +1,24 @@
+/* Mobile Fix */
+@media (max-width: 768px) {
+  html,
+  body {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  body {
+    display: block;
+  }
+
+  main.container {
+    padding: 24px 16px;
+  }
+
+  .card {
+    padding: 28px 20px;
+  }
+
+  .footer {
+    margin-top: 24px;
+  }
+}

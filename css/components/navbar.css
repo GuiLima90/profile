@@ -1,0 +1,76 @@
+/* ================= NAVBAR ================= */
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #1f2a37;
+  z-index: 3000;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.topbar__btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Espaço para não esconder conteúdo */
+body {
+  padding-top: 56px;
+}
+
+/* ================= MENU ================= */
+
+.drawer {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 260px;
+  height: calc(100vh - 56px);
+  background: #1f2a37;
+  z-index: 3100;
+
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer a {
+  color: #fff;
+  padding: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.drawer.is-open {
+  transform: translateX(0);
+}
+
+/* ================= OVERLAY ================= */
+
+.overlay {
+  position: fixed;
+  inset: 56px 0 0 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 3050;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}

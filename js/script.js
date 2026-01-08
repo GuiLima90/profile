@@ -11,6 +11,7 @@ if (emailBtn && emailTooltip) {
   });
 }
 
+
 // ===== BACKGROUND ANIMATION =====
 
 const canvas = document.getElementById("bg-canvas");
@@ -60,3 +61,16 @@ if (canvas) {
 
   animate();
 }
+const menuBtn = document.getElementById("menuBtn");
+const drawer = document.getElementById("drawer");
+const overlay = document.getElementById("overlay");
+
+menuBtn.addEventListener("click", () => {
+  drawer.classList.toggle("is-open");
+  overlay.classList.toggle("is-open");
+});
+
+overlay.addEventListener("click", () => {
+  drawer.classList.remove("is-open");
+  overlay.classList.remove("is-open");
+});

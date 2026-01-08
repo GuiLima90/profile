@@ -1,0 +1,41 @@
+/* Links sociais */
+.social-links {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.social-links a {
+  font-size: 1.6rem;
+  color: #d1d5db;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #f63b3b;
+  transform: translateY(-3px);
+}
+
+/* Wrapper do email */
+.social-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip do email */
+#email-tooltip {
+  display: none;
+  margin-top: 8px;
+  text-align: center;
+}
+
+#email-tooltip a {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+#email-tooltip a:hover {
+  text-decoration: underline;
+}
