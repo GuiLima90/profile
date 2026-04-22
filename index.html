@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <title>Guilherme Starnino | Developer</title>
@@ -9,23 +9,19 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 <body>
   <!-- NAVBAR -->
   <header class="topbar">
-    <button class="topbar__btn" id="menuBtn" aria-label="Menu">
-      ☰
-    </button>
+    <button class="topbar__btn" id="menuBtn" aria-label="Menu">☰</button>
   </header>
 
   <div class="overlay" id="overlay"></div>
@@ -33,68 +29,91 @@
   <nav class="drawer" id="drawer">
     <a href="about/">Über mich</a>
     <a href="projects/">Projekte</a>
-    <a href="assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank">
-      Lebenslauf
-    </a>
+    <a href="assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank">Lebenslauf</a>
   </nav>
 
   <!-- Background Canvas -->
   <canvas id="bg-canvas"></canvas>
 
-  <!-- MAIN -->
-  <main class="container">
-    <section class="card intro-card">
-      <div class="intro-text">
-        <h1>Hallo, ich bin Guilherme.</h1>
-
-        <p>
-          Ich bin Junior Full-Stack Developer und fokussiere mich auf die Entwicklung
-          klarer, gut strukturierter Webanwendungen, die reale Probleme lösen.
-        </p>
-
-        <p>
-          Ich bringe umfangreiche Berufserfahrung außerhalb der IT-Branche mit,
-          wodurch ich eine ausgeprägte Verantwortungsbereitschaft,
-          Organisationsfähigkeit und eine starke Lernmotivation entwickelt habe.
-        </p>
-
-        <p>
-          Wenn Sie Interesse an einem Austausch haben oder mehr über meine Arbeit
-          erfahren möchten, freue ich mich über eine Kontaktaufnahme.
-        </p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hallo, ich bin</p>
+      <h1 class="hero-name">Guilherme Starnino</h1>
+      <p class="hero-role">Junior <span class="hero-highlight">Full-Stack Developer</span></p>
+      <p class="hero-description">
+        Ich entwickle moderne Webanwendungen mit Fokus auf sauberen Code und gute UX.
+        Absolvent des Le Wagon Bootcamps · Ruby on Rails · JavaScript
+      </p>
+      <div class="hero-buttons">
+        <a href="projects/" class="btn btn-primary">Projekte ansehen →</a>
+        <a href="assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank" class="btn btn-secondary">Lebenslauf</a>
       </div>
+    </div>
 
-      <div class="intro-photo">
-        <img src="images/Gui foto.png.jpeg" alt="Foto de Guilherme Starnino">
+    <div class="hero-photo">
+      <img src="images/Gui foto.png.jpeg" alt="Guilherme Starnino">
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills">
+    <div class="skills-container">
+      <h2 class="skills-title">Technische Kenntnisse</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fa-brands fa-html5"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-css3-alt"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-js"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-gem"></i>
+          <span>Ruby on Rails</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-database"></i>
+          <span>PostgreSQL</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-github"></i>
+          <span>Git / GitHub</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-plug"></i>
+          <span>APIs</span>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-pen-ruler"></i>
+          <span>UX / UI</span>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-social">
       <button id="email-btn" aria-label="Mostrar email" class="icon-btn">
         <i class="fa-regular fa-envelope"></i>
       </button>
-
       <a href="https://github.com/GuiLima90" target="_blank" aria-label="GitHub">
         <i class="fa-brands fa-github"></i>
       </a>
-
       <a href="https://www.linkedin.com/in/guilherme-starnino" target="_blank" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin"></i>
       </a>
     </div>
-
     <div id="email-tooltip">
-      <a href="mailto:starninoguilherm@gmail.com">
-        starninoguilherm@gmail.com
-      </a>
+      <a href="mailto:starninoguilherm@gmail.com">starninoguilherm@gmail.com</a>
     </div>
-
-    <div class="footer-bottom">
-      © Guilherme Starnino 2025
-    </div>
+    <div class="footer-bottom">© Guilherme Starnino 2025</div>
   </footer>
 
   <!-- Scripts -->

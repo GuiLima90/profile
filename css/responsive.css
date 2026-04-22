@@ -1,7 +1,6 @@
-/* Mobile Fix */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  html,
-  body {
+  html, body {
     height: auto;
     overflow-y: auto;
   }
@@ -10,10 +9,39 @@
     display: block;
   }
 
-  main.container {
-    padding: 24px 16px;
+  /* Hero */
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 32px;
+    min-height: auto;
   }
 
+  .hero-name {
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    margin: 0 auto 32px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-photo img {
+    width: 160px;
+    height: 160px;
+  }
+
+  /* Skills */
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 14px;
+  }
+
+  /* Card */
   .card {
     padding: 28px 20px;
   }
