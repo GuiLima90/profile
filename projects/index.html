@@ -4,13 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projekte | Guilherme Starnino</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/components/card.css">
 </head>
 <body>
-  <main class="container">
-    <a href="../index.html" class="home-link">Home</a>
 
+  <!-- NAVBAR -->
+  <header class="topbar">
+    <button class="topbar__btn" id="menuBtn" aria-label="Menu">☰</button>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <nav class="drawer" id="drawer">
+    <a href="../index.html">Home</a>
+    <a href="../about/">Über mich</a>
+    <a href="../assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank">Lebenslauf</a>
+  </nav>
+
+  <!-- Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- MAIN -->
+  <main class="container">
     <section class="projects-list">
 
       <!-- PROJECT 1: InsightLoop -->
@@ -40,9 +65,7 @@
         </div>
 
         <div class="project-links">
-          <a href="https://github.com/GuiLima90/insightloopfinal" target="_blank">
-            GitHub →
-          </a>
+          <a href="https://github.com/GuiLima90/insightloopfinal" target="_blank">GitHub →</a>
         </div>
       </article>
 
@@ -71,12 +94,8 @@
         </div>
 
         <div class="project-links">
-          <a href="https://guilima90.github.io/alexandrepsicanalista/" target="_blank">
-            Live Demo →
-          </a>
-          <a href="https://github.com/GuiLima90/alexandrepsicanalista" target="_blank">
-            GitHub →
-          </a>
+          <a href="https://guilima90.github.io/alexandrepsicanalista/" target="_blank">Live Demo →</a>
+          <a href="https://github.com/GuiLima90/alexandrepsicanalista" target="_blank">GitHub →</a>
         </div>
       </article>
 
@@ -102,16 +121,35 @@
         </div>
 
         <div class="project-links">
-          <a href="https://guilima90.github.io/anna-bella-website/" target="_blank">
-            Live Demo →
-          </a>
-          <a href="https://github.com/GuiLima90/anna-bella-website" target="_blank">
-            GitHub →
-          </a>
+          <a href="https://guilima90.github.io/anna-bella-website/" target="_blank">Live Demo →</a>
+          <a href="https://github.com/GuiLima90/anna-bella-website" target="_blank">GitHub →</a>
         </div>
       </article>
 
     </section>
   </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-social">
+      <button id="email-btn" aria-label="Mostrar email" class="icon-btn">
+        <i class="fa-regular fa-envelope"></i>
+      </button>
+      <a href="https://github.com/GuiLima90" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/guilherme-starnino" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+    <div id="email-tooltip">
+      <a href="mailto:starninoguilherm@gmail.com">starninoguilherm@gmail.com</a>
+    </div>
+    <div class="footer-bottom">© Guilherme Starnino 2025</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/script.js"></script>
+
 </body>
 </html>
