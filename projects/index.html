@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projekte | Guilherme Starnino</title>
+  <title>Projects | Guilherme Starnino</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
@@ -21,14 +21,24 @@
   <!-- NAVBAR -->
   <header class="topbar">
     <button class="topbar__btn" id="menuBtn" aria-label="Menu">☰</button>
+    <div class="lang-toggle">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="pt">PT</button>
+    </div>
   </header>
 
   <div class="overlay" id="overlay"></div>
 
   <nav class="drawer" id="drawer">
-    <a href="../">Home</a>
-    <a href="../about/">Über mich</a>
-    <a href="../assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank">Lebenslauf</a>
+    <div class="drawer-links">
+      <a href="../" data-en="Home" data-pt="Início">Home</a>
+      <a href="../about/" data-en="About me" data-pt="Sobre mim">About me</a>
+      <a href="../assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank" data-en="Résumé" data-pt="Currículo">Résumé</a>
+    </div>
+    <div class="lang-toggle">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="pt">PT</button>
+    </div>
   </nav>
 
   <!-- Background Canvas -->
@@ -39,20 +49,20 @@
     <section class="projects-list">
 
       <!-- PROJECT 1: InsightLoop -->
-      <article class="card project-card">
+      <article class="card project-card tilt-target">
         <img src="../images/insight_loop_logo_reduzido.png" alt="InsightLoop preview" class="project-image">
 
+        <p class="project-eyebrow" data-en="AI-Powered" data-pt="Com IA">AI-Powered</p>
         <h2>InsightLoop</h2>
 
-        <p>
-          InsightLoop ist eine KI-gestützte Webanwendung zur Analyse von
-          Kundenkommunikation im E-Commerce.
+        <p data-en="InsightLoop is an AI-powered web application that analyzes customer communication in e-commerce."
+           data-pt="InsightLoop é uma aplicação web com IA para analisar a comunicação com clientes no e-commerce.">
+          InsightLoop is an AI-powered web application that analyzes customer communication in e-commerce.
         </p>
 
-        <p>
-          Die Anwendung klassifiziert Support-Nachrichten automatisch
-          und generiert umsetzbare Insights zur Verbesserung von
-          Geschäftsprozessen.
+        <p data-en="It automatically classifies support messages and generates actionable insights to improve business processes."
+           data-pt="Ela classifica automaticamente mensagens de suporte e gera insights acionáveis para melhorar processos de negócio.">
+          It automatically classifies support messages and generates actionable insights to improve business processes.
         </p>
 
         <div class="project-tech">
@@ -70,49 +80,50 @@
       </article>
 
       <!-- PROJECT 2: Alexandre Psicanalista -->
-      <article class="card project-card">
+      <article class="card project-card tilt-target">
         <img src="../images/alexandre2.jpg" alt="Alexandre Psicanalista preview" class="project-image">
 
+        <p class="project-eyebrow" data-en="Client Work" data-pt="Trabalho para Cliente">Client Work</p>
         <h2>Alexandre Psicanalista</h2>
 
-        <p>
-          Professionelle Website für einen Psychoanalytiker mit Fokus
-          auf klare Informationspräsentation und Terminvereinbarung.
+        <p data-en="A professional website for a psychoanalyst, focused on clear presentation of information and easy appointment scheduling."
+           data-pt="Um site profissional para um psicanalista, com foco em apresentação clara de informações e facilidade para marcar consultas.">
+          A professional website for a psychoanalyst, focused on clear presentation of information and easy appointment scheduling.
         </p>
 
-        <p>
-          Die Website bietet eine übersichtliche Darstellung der
-          Dienstleistungen, Qualifikationen und Kontaktmöglichkeiten
-          mit responsivem Design.
+        <p data-en="The site offers a clear overview of services, qualifications, and contact options, with a fully responsive design."
+           data-pt="O site oferece uma visão clara dos serviços, qualificações e formas de contato, com um design totalmente responsivo.">
+          The site offers a clear overview of services, qualifications, and contact options, with a fully responsive design.
         </p>
 
         <div class="project-tech">
           <span class="badge">HTML</span>
           <span class="badge">CSS</span>
           <span class="badge">JavaScript</span>
-          <span class="badge">Responsive Design</span>
+          <span class="badge" data-en="Responsive Design" data-pt="Design Responsivo">Responsive Design</span>
         </div>
 
         <div class="project-links">
-          <a href="https://guilima90.github.io/alexandrepsicanalista/" target="_blank">Live Demo →</a>
+          <a href="https://guilima90.github.io/alexandrepsicanalista/" target="_blank" data-en="Live Demo →" data-pt="Ver ao Vivo →">Live Demo →</a>
           <a href="https://github.com/GuiLima90/alexandrepsicanalista" target="_blank">GitHub →</a>
         </div>
       </article>
 
       <!-- PROJECT 3: Anna Bella -->
-      <article class="card project-card">
+      <article class="card project-card tilt-target">
         <img src="../images/capa.png" alt="Anna Bella preview" class="project-image">
 
+        <p class="project-eyebrow" data-en="First Project" data-pt="Primeiro Projeto">First Project</p>
         <h2>Anna Bella</h2>
 
-        <p>
-          Mein erstes Website-Projekt zu Beginn meiner Webentwicklungs-Reise.
-          Eine persönliche Blog-Website mit biografischen Informationen.
+        <p data-en="My very first website project, built at the start of my web development journey — a personal blog site with biographical content."
+           data-pt="Meu primeiríssimo projeto de site, criado no início da minha jornada em desenvolvimento web — um blog pessoal com conteúdo biográfico.">
+          My very first website project, built at the start of my web development journey — a personal blog site with biographical content.
         </p>
 
-        <p>
-          Das Projekt demonstriert grundlegende HTML- und CSS-Kenntnisse
-          mit Fokus auf saubere Struktur und einfaches, klassisches Design.
+        <p data-en="The project demonstrates fundamental HTML and CSS skills, focused on clean structure and a simple, classic design."
+           data-pt="O projeto demonstra conhecimentos fundamentais de HTML e CSS, com foco em estrutura limpa e um design simples e clássico.">
+          The project demonstrates fundamental HTML and CSS skills, focused on clean structure and a simple, classic design.
         </p>
 
         <div class="project-tech">
@@ -121,7 +132,7 @@
         </div>
 
         <div class="project-links">
-          <a href="https://guilima90.github.io/anna-bella-website/" target="_blank">Live Demo →</a>
+          <a href="https://guilima90.github.io/anna-bella-website/" target="_blank" data-en="Live Demo →" data-pt="Ver ao Vivo →">Live Demo →</a>
           <a href="https://github.com/GuiLima90/anna-bella-website" target="_blank">GitHub →</a>
         </div>
       </article>
@@ -145,7 +156,7 @@
     <div id="email-tooltip">
       <a href="mailto:starninoguilherm@gmail.com">starninoguilherm@gmail.com</a>
     </div>
-    <div class="footer-bottom">© Guilherme Starnino 2025</div>
+    <div class="footer-bottom">© Guilherme Starnino <span id="year">2025</span></div>
   </footer>
 
   <!-- Scripts -->

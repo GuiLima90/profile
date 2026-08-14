@@ -2,26 +2,26 @@
 .icon-btn {
   background: none;
   border: none;
-  color: #d1d5db;
+  color: var(--text-dim);
   font-size: 1.4rem;
   cursor: pointer;
   padding: 0;
 }
 
 .icon-btn:hover {
-  color: #60a5fa;
+  color: var(--accent-soft);
 }
 
 .back-home {
   display: inline-block;
   margin-bottom: 32px;
   font-size: 0.9rem;
-  color: #1f2021ff;
+  color: var(--text-dim);
   text-decoration: none;
 }
 
 .back-home:hover {
-  color: #2563eb;
+  color: var(--accent-soft);
 }
 
 .home-link {
@@ -29,11 +29,20 @@
   top: 24px;
   left: 24px;
   font-size: 0.9rem;
-  color: #6b7280;
+  color: var(--text-dim);
   text-decoration: none;
   z-index: 10;
 }
 
 .home-link:hover {
-  color: #2563eb;
+  color: var(--accent-soft);
+}
+
+.about-topbar {
+  max-width: 720px;
+  margin: 32px auto 0;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

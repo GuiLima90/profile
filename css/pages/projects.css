@@ -6,14 +6,15 @@
 }
 
 .project h2 {
+  font-family: var(--font-display);
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 16px;
 }
 
 .project p {
   font-size: 1.05rem;
-  color: #444;
+  color: var(--text-dim);
   margin-bottom: 20px;
 }
 
@@ -27,26 +28,18 @@
   display: inline-block;
   margin: 6px 10px;
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text-dim);
 }
 
 .project-links a {
   text-decoration: none;
-  color: #2563eb;
+  color: var(--accent-soft);
   font-weight: 500;
   border-bottom: 1px solid transparent;
 }
 
 .project-links a:hover {
-  border-bottom: 1px solid #ffffff;
-}
-.projects-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  border-bottom: 1px solid var(--accent-soft);
 }
 
 .projects-list {
@@ -60,25 +53,38 @@
 
 .project-card {
   padding: 32px;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  border-left: 4px solid #2563eb;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-left: 4px solid var(--accent);
+  border-radius: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  border-color: var(--accent);
+}
+
+.project-card .project-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  font-weight: 700;
+  margin: 0 0 10px;
 }
 
 .project-card h2 {
+  font-family: var(--font-display);
   font-size: 1.8rem;
   margin-bottom: 16px;
-  color: #1a1a1a;
+  color: var(--text);
 }
 
 .project-card p {
   margin-bottom: 12px;
-  color: #444;
+  color: var(--text-dim);
   line-height: 1.6;
 }
 
@@ -89,7 +95,7 @@
   object-fit: contain;
   border-radius: 10px;
   margin-bottom: 24px;
-  background-color: #f1f5f9;
+  background-color: #0e1018;
   padding: 12px;
 }
 
@@ -103,9 +109,9 @@
 }
 
 .badge {
-  background-color: #eff6ff;
-  color: #2563eb;
-  border: 1px solid #bfdbfe;
+  background-color: rgba(109, 107, 255, 0.12);
+  color: var(--accent-soft);
+  border: 1px solid rgba(109, 107, 255, 0.25);
   border-radius: 20px;
   padding: 4px 12px;
   font-size: 0.82rem;
@@ -117,19 +123,20 @@
   display: flex;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project-links a {
-  color: #2563eb;
+  color: var(--accent-soft);
   text-decoration: none;
-  font-weight: 500;
-  padding: 8px 16px;
-  border: 2px solid #2563eb;
-  border-radius: 6px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
   transition: all 0.2s ease;
 }
 
 .project-links a:hover {
-  background-color: #2563eb;
-  color: white;
+  background-color: var(--accent);
+  color: #0b0d14;
 }

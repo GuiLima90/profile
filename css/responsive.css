@@ -30,9 +30,32 @@
     justify-content: center;
   }
 
-  .hero-photo img {
-    width: 160px;
-    height: 160px;
+  .hero-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .orbit-badge {
+    display: none;
+  }
+
+  .hero-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .topbar {
+    padding: 0 12px;
+  }
+
+  .footer-bottom {
+    margin-top: 12px;
   }
 
   /* Skills */

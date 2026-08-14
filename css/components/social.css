@@ -8,12 +8,12 @@
 
 .social-links a {
   font-size: 1.6rem;
-  color: #d1d5db;
+  color: var(--text-dim);
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .social-links a:hover {
-  color: #f63b3b;
+  color: var(--accent-warm);
   transform: translateY(-3px);
 }
 
@@ -31,11 +31,12 @@
 }
 
 #email-tooltip a {
-  color: #d1d5db;
+  color: var(--text-dim);
   font-size: 0.9rem;
   text-decoration: none;
 }
 
 #email-tooltip a:hover {
   text-decoration: underline;
+  color: var(--accent-soft);
 }

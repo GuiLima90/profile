@@ -1,0 +1,108 @@
+/* ===== 3D TILT ===== */
+.tilt-target {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+/* ===== PARALLAX BLOBS ===== */
+.parallax-shapes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.parallax-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.35;
+  will-change: transform;
+}
+
+.parallax-shape--1 {
+  width: 320px;
+  height: 320px;
+  top: -60px;
+  left: -80px;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+}
+
+.parallax-shape--2 {
+  width: 260px;
+  height: 260px;
+  bottom: -40px;
+  right: 6%;
+  background: radial-gradient(circle, var(--accent-warm) 0%, transparent 70%);
+}
+
+.hero {
+  position: relative;
+}
+
+/* ===== ORBIT BADGE ===== */
+.orbit-badge {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  margin: 32px auto 0;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.orbit-badge:active {
+  cursor: grabbing;
+}
+
+.orbit-badge__ring {
+  width: 100%;
+  height: 100%;
+  animation: orbit-spin 14s linear infinite;
+}
+
+.orbit-badge.is-dragging .orbit-badge__ring {
+  animation-play-state: paused;
+}
+
+.orbit-badge__ring text {
+  font-family: var(--font-display);
+  font-size: 14.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  fill: var(--text-dim);
+  text-transform: uppercase;
+}
+
+.orbit-badge__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #0a0f12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+@keyframes orbit-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit-badge__ring {
+    animation: none;
+  }
+  .tilt-target {
+    transition: none;
+  }
+}

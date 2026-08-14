@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Über mich | Guilherme Starnino</title>
-  <meta name="description" content="Über mich – Guilherme Starnino, Junior Full-Stack Developer">
+  <title>About | Guilherme Starnino</title>
+  <meta name="description" content="About Guilherme Starnino, Junior Full-Stack Developer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/components/card.css">
@@ -17,51 +17,48 @@
 
 <body>
 
-   <a href="../index.html" class="home-link">Home</a>
+  <div class="about-topbar">
+    <a href="../index.html" class="home-link" style="position:static;">← <span data-en="Home" data-pt="Início">Home</span></a>
+    <div class="lang-toggle">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="pt">PT</button>
+    </div>
+  </div>
 
    <main class="container">
 
     <section class="card">
-      <h1>Über mich</h1>
+      <h1 data-en="About me" data-pt="Sobre mim">About me</h1>
 
-      <p>
-        Ich heiße Guilherme und befinde mich derzeit in einer beruflichen
-        Neuorientierung im Bereich der Softwareentwicklung.
-        Nach mehreren Jahren Berufserfahrung außerhalb der IT habe ich mich
-        bewusst dazu entschieden, meine Karriere in Richtung Webentwicklung
-        weiterzuentwickeln.
+      <p data-en="I'm Guilherme, currently going through a professional reinvention into software development. After several years of work experience outside IT, I made a deliberate decision to move my career toward web development."
+         data-pt="Eu me chamo Guilherme e estou passando por uma reinvenção profissional na área de desenvolvimento de software. Depois de vários anos de experiência fora da área de TI, decidi conscientemente direcionar minha carreira para o desenvolvimento web.">
+        I'm Guilherme, currently going through a professional reinvention into software development. After several years of work experience outside IT, I made a deliberate decision to move my career toward web development.
       </p>
 
-      <p>
-        Um diesen Schritt fundiert vorzubereiten, habe ich ein intensives
-        Full-Stack-Webdevelopment-Bootcamp bei <strong>Le Wagon</strong>
-        abgeschlossen, in dem ich praxisnah mit modernen Technologien und
-        agilen Arbeitsmethoden gearbeitet habe.
+      <p data-en="To prepare for this step, I completed an intensive Full-Stack Web Development bootcamp at Le Wagon, working hands-on with modern technologies and agile methods."
+         data-pt="Para me preparar para esse passo, concluí um bootcamp intensivo de Full-Stack Web Development na Le Wagon, trabalhando na prática com tecnologias modernas e métodos ágeis.">
+        To prepare for this step, I completed an intensive Full-Stack Web Development bootcamp at <strong>Le Wagon</strong>, working hands-on with modern technologies and agile methods.
       </p>
 
-      <p>
-        Besonders wichtig sind mir saubere Code-Strukturen, kontinuierliches
-        Lernen sowie die Fähigkeit, komplexe Probleme verständlich und
-        lösungsorientiert anzugehen.
+      <p data-en="Clean code structure, continuous learning, and the ability to approach complex problems clearly and pragmatically matter a lot to me."
+         data-pt="Estrutura de código limpa, aprendizado contínuo e a capacidade de resolver problemas complexos de forma clara e pragmática são muito importantes para mim.">
+        Clean code structure, continuous learning, and the ability to approach complex problems clearly and pragmatically matter a lot to me.
       </p>
 
-      <p>
-        Durch meine vorherige berufliche Laufbahn bringe ich ein hohes Maß an
-        Verantwortungsbewusstsein, Zuverlässigkeit und Teamfähigkeit mit.
-        Diese Eigenschaften möchte ich nun gezielt in der Softwareentwicklung
-        einsetzen und weiter ausbauen.
+      <p data-en="My previous career gave me a strong sense of responsibility, reliability, and teamwork — qualities I now want to bring into software development and keep building on."
+         data-pt="Minha carreira anterior me deu um forte senso de responsabilidade, confiabilidade e trabalho em equipe — qualidades que agora quero aplicar no desenvolvimento de software e continuar desenvolvendo.">
+        My previous career gave me a strong sense of responsibility, reliability, and teamwork — qualities I now want to bring into software development and keep building on.
       </p>
 
-      <p>
-        Aktuell suche ich eine Einstiegsposition als
-        <strong>Junior Full-Stack Developer</strong>, in der ich mich fachlich
-        und persönlich weiterentwickeln kann.
+      <p data-en="I'm currently looking for an entry-level position as a Junior Full-Stack Developer, where I can keep growing both technically and personally."
+         data-pt="Atualmente busco uma posição inicial como Dev Full-Stack Júnior, onde eu possa continuar crescendo, técnica e pessoalmente.">
+        I'm currently looking for an entry-level position as a <strong>Junior Full-Stack Developer</strong>, where I can keep growing both technically and personally.
       </p>
-
 
     </section>
 
   </main>
 
+  <script src="../js/script.js"></script>
 </body>
 </html>

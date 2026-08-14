@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Guilherme Starnino | Developer</title>
-  <meta name="description" content="Portfólio de Guilherme Starnino, Desenvolvedor Full-Stack Júnior">
+  <meta name="description" content="Guilherme Starnino — Junior Full-Stack Developer portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
@@ -22,14 +22,24 @@
   <!-- NAVBAR -->
   <header class="topbar">
     <button class="topbar__btn" id="menuBtn" aria-label="Menu">☰</button>
+    <div class="lang-toggle">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="pt">PT</button>
+    </div>
   </header>
 
   <div class="overlay" id="overlay"></div>
 
   <nav class="drawer" id="drawer">
-    <a href="about/">Über mich</a>
-    <a href="projects/">Projekte</a>
-    <a href="assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank">Lebenslauf</a>
+    <div class="drawer-links">
+      <a href="about/" data-en="About me" data-pt="Sobre mim">About me</a>
+      <a href="projects/" data-en="Projects" data-pt="Projetos">Projects</a>
+      <a href="assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank" data-en="Résumé" data-pt="Currículo">Résumé</a>
+    </div>
+    <div class="lang-toggle">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="pt">PT</button>
+    </div>
   </nav>
 
   <!-- Background Canvas -->
@@ -37,29 +47,72 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="parallax-shapes" aria-hidden="true">
+      <div class="parallax-shape parallax-shape--1" data-speed="0.15"></div>
+      <div class="parallax-shape parallax-shape--2" data-speed="0.25"></div>
+    </div>
+
     <div class="hero-content">
-      <p class="hero-greeting">Hallo, ich bin</p>
+      <span class="hero-badge">
+        <span class="dot"></span>
+        <span data-en="Open to Junior Full-Stack roles" data-pt="Aberto a vagas Full-Stack Júnior">Open to Junior Full-Stack roles</span>
+      </span>
+
+      <p class="hero-greeting" data-en="Hi, I'm" data-pt="Olá, eu sou">Hi, I'm</p>
       <h1 class="hero-name">Guilherme Starnino</h1>
-      <p class="hero-role">Junior <span class="hero-highlight">Full-Stack Developer</span></p>
-      <p class="hero-description">
-        Ich entwickle moderne Webanwendungen mit Fokus auf sauberen Code und gute UX.
-        Absolvent des Le Wagon Bootcamps · Ruby on Rails · JavaScript
+      <p class="hero-role">
+        <span data-en="Junior" data-pt="Dev">Junior</span>
+        <span class="hero-highlight" data-en="Full-Stack Developer" data-pt="Full-Stack Júnior">Full-Stack Developer</span>
+      </p>
+      <p class="hero-description"
+         data-en="I build modern web applications with a focus on clean code and good UX. Le Wagon bootcamp graduate · Ruby on Rails · JavaScript"
+         data-pt="Desenvolvo aplicações web modernas com foco em código limpo e boa UX. Formado no bootcamp da Le Wagon · Ruby on Rails · JavaScript">
+        I build modern web applications with a focus on clean code and good UX. Le Wagon bootcamp graduate · Ruby on Rails · JavaScript
       </p>
       <div class="hero-buttons">
-        <a href="projects/" class="btn btn-primary">Projekte ansehen →</a>
-        <a href="assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank" class="btn btn-secondary">Lebenslauf</a>
+        <a href="projects/" class="btn btn-primary" data-en="View Projects →" data-pt="Ver Projetos →">View Projects →</a>
+        <a href="assets/Guilherme_Starnino_Lebenslauf.pdf" target="_blank" class="btn btn-secondary" data-en="Résumé" data-pt="Currículo">Résumé</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <strong>3+</strong>
+          <span data-en="Projects Built" data-pt="Projetos Criados">Projects Built</span>
+        </div>
+        <div>
+          <strong>8</strong>
+          <span data-en="Technologies" data-pt="Tecnologias">Technologies</span>
+        </div>
+        <div>
+          <strong>Le Wagon</strong>
+          <span data-en="Bootcamp Grad" data-pt="Formação Bootcamp">Bootcamp Grad</span>
+        </div>
       </div>
     </div>
 
-    <div class="hero-photo">
-      <img src="images/Gui foto.png.jpeg" alt="Guilherme Starnino">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo tilt-target">
+        <img src="images/Gui foto.png.jpeg" alt="Guilherme Starnino">
+      </div>
+
+      <div class="orbit-badge" id="orbitBadge">
+        <svg class="orbit-badge__ring" viewBox="0 0 200 200">
+          <defs>
+            <path id="orbitPath" d="M100,100 m-84,0 a84,84 0 1,1 168,0 a84,84 0 1,1 -168,0" />
+          </defs>
+          <text>
+            <textPath href="#orbitPath" startOffset="0%" data-en="• LET'S TALK • VIEW PROJECTS " data-pt="• VAMOS CONVERSAR • VER PROJETOS ">• LET'S TALK • VIEW PROJECTS </textPath>
+          </text>
+        </svg>
+        <span class="orbit-badge__center">↓</span>
+      </div>
     </div>
   </section>
 
   <!-- SKILLS -->
   <section class="skills">
     <div class="skills-container">
-      <h2 class="skills-title">Technische Kenntnisse</h2>
+      <h2 class="skills-title" data-en="Tools &amp; Technologies" data-pt="Ferramentas &amp; Tecnologias">Tools &amp; Technologies</h2>
       <div class="skills-grid">
         <div class="skill-card">
           <i class="fa-brands fa-html5"></i>
@@ -113,7 +166,11 @@
     <div id="email-tooltip">
       <a href="mailto:starninoguilherm@gmail.com">starninoguilherm@gmail.com</a>
     </div>
-    <div class="footer-bottom">© Guilherme Starnino 2025</div>
+    <div class="lang-toggle">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="pt">PT</button>
+    </div>
+    <div class="footer-bottom">© Guilherme Starnino <span id="year">2025</span></div>
   </footer>
 
   <!-- Scripts -->
